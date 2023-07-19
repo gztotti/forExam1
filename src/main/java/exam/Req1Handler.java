@@ -1,7 +1,8 @@
 package exam;
 
 public class Req1Handler {
-    public StringBuffer handle(StringBuffer str) {
+    public String handle(String strIn) {
+        StringBuffer str = new StringBuffer(strIn);
         int i = 0;
         int j = 0;
         boolean isFound = false;
@@ -23,6 +24,6 @@ public class Req1Handler {
             j = 0;
             isFound = false;
         }
-        return str;
+        return str.toString();
     }
 }
